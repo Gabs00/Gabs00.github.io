@@ -42,6 +42,7 @@ a {
 }
 
 .content {
+
 }
 
 #projects ul{
@@ -65,4 +66,22 @@ a {
 
 .both {
   clear:both;
+}
+
+.prose {
+  width: 50%;
+  margin: 20px auto;
+  font-size:large;
+}
+
+#home img {
+  width:280;
+  height:320;
+  margin-bottom: 5px;
+  margin-right:20px;
+}
+
+#home code {
+  clear:both;
+  margin: 25px auto;
 }
