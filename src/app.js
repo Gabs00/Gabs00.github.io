@@ -1,20 +1,21 @@
 angular.module('personal', ['ui.router'])
 .config(function($stateProvider, $urlRouterProvider){
+  $urlRouterProvider.otherwise('home');
   $stateProvider
     .state('home', {
-      url:'/index',
-      templateUrl: './home.html',
+      url:'/home',
+      templateUrl: './partials/home.html'
     })
     .state('blog', {
       url:'/blog',
-      template:'<h2>My Blogs</h2>'
+      templateUrl: './partials/blog.html'
     })
     .state('proj', {
       url:'/projects',
-      template: '<h2>My Projects</h2>'
+      templateUrl: './partials/projects.html'
     })
     .state('stuff', {
       url:'/other',
-      template:'<h2>stuff</h2>'
+      templateUrl: './partials/stuff.html'
     });
 });

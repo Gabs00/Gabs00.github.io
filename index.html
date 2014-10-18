@@ -3,12 +3,14 @@
     <title>Stuffs About Me</title>
   </head>
   <body ng-app="personal">
-    <nav>
-      <a ui-sref="home">Home</a>
-      <a ui-sref="blog">My Blog</a>
-      <a ui-sref="proj">My Projects</a>
-      <a ui-sref="stuff">Other things</a>
-    </nav>
+    <nav-menu ng-controller="NavController">
+
+      <a href="home">Hom</a>
+      <a href="blog">My Blog</a>
+      <a href="proj">My Projects</a>
+      <a href="stuff">Other things</a>
+
+    </nav-menu>
 
     <div ui-view>
 
@@ -17,6 +19,8 @@
     <script src="bower_components\jquery\dist\jquery.min.js" charset="utf-8"></script>
     <script src="bower_components\angular\angular.min.js" charset="utf-8"></script>
     <script src="bower_components\angular-ui-router\release\angular-ui-router.min.js" charset="utf-8"></script>
-    <script src="app.js" charset="utf-8"></script>
+
+    <script src="src\app.js" charset="utf-8"></script>
+    <script src="src\nav.directive.js" charset="utf-8"></script>
   </body>
 </html>
