@@ -1,26 +1,34 @@
 <html>
   <head>
-    <title>Stuffs About Me</title>
+    <link rel="stylesheet" href="/src/styles.css" media="screen" title="no title" charset="utf-8">
+    <title>About Me</title>
   </head>
   <body ng-app="personal">
-    <nav-menu ng-controller="NavController">
+    <div class="container">
+      <div class="header">
+        <nav-menu ng-controller="NavController">
+          <nav>
+            <a href="partials/home.html" target="nojs">Hom</a>
+            <a href="partials/blog.html" target="nojs">My Blog</a>
+            <a href="partials/projects.html" target="nojs">My Projects</a>
+            <a href="partials/stuff.html" target="nojs">Other things</a>
+          </nav>
+        </nav-menu>
+      </div>
+      <div class="content">
+        <div ui-view>
+          <iframe name="nojs"></iframe>
+        </div>
+      </div>
+      <div class="footer">
+      <div>
+      <!-- them scripts -->
+      <script src="bower_components\jquery\dist\jquery.min.js" charset="utf-8"></script>
+      <script src="bower_components\angular\angular.min.js" charset="utf-8"></script>
+      <script src="bower_components\angular-ui-router\release\angular-ui-router.min.js" charset="utf-8"></script>
 
-      <a href="home">Hom</a>
-      <a href="blog">My Blog</a>
-      <a href="proj">My Projects</a>
-      <a href="stuff">Other things</a>
-
-    </nav-menu>
-
-    <div ui-view>
-
+      <script src="src\app.js" charset="utf-8"></script>
+      <script src="src\nav.directive.js" charset="utf-8"></script>
     </div>
-    <!-- them scripts -->
-    <script src="bower_components\jquery\dist\jquery.min.js" charset="utf-8"></script>
-    <script src="bower_components\angular\angular.min.js" charset="utf-8"></script>
-    <script src="bower_components\angular-ui-router\release\angular-ui-router.min.js" charset="utf-8"></script>
-
-    <script src="src\app.js" charset="utf-8"></script>
-    <script src="src\nav.directive.js" charset="utf-8"></script>
   </body>
 </html>
