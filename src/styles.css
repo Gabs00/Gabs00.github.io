@@ -16,7 +16,7 @@ nav a {
   padding:2px;
   color: #4f4f4f;
 }
-nav a:hover {
+nav a:hover, nav a.active {
   color: #5ba4e5;
 }
 
@@ -44,6 +44,9 @@ a {
 .content {
 }
 
+#projects ul{
+  list-style:none;
+}
 .right {
   float:right;
 }
