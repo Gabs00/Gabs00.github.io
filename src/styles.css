@@ -41,8 +41,8 @@ a {
 .footer {
 }
 
-.content {
-
+.content, #projects span.short {
+  font-size:large;
 }
 
 #projects ul{
@@ -84,4 +84,23 @@ a {
 #home code {
   clear:both;
   margin: 25px auto;
+}
+
+.title {
+  font-size:x-large;
+  float:left;
+  clear:both;
+  margin-top: 10px;
+}
+#projects div span {
+  float:left;
+  clear:both;
+}
+.projects li {
+  height:auto;
+  width: 100%;
+  border: 1px solid #4f4f4f;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding-left: 10px;
 }
