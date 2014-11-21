@@ -12,11 +12,6 @@ angular.module('personal')
     restrict: 'EA',
     templateUrl:'./partials/links.html',
     link:function(scope, element, attr){
-      element.on('click', 'a', function(e){
-        var $el = $(this);
-        element.find('nav a').removeClass('active');
-        $el.addClass('active');
-      });
     }
   };
 });

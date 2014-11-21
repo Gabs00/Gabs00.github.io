@@ -1,4 +1,4 @@
-angular.module('personal', ['ui.router'])
+angular.module('personal', ['ui.router', 'ui.bootstrap'])
 .config(function($stateProvider, $urlRouterProvider){
   $urlRouterProvider.otherwise('home');
   $stateProvider
